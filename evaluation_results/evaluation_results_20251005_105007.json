@@ -1,0 +1,60 @@
+{
+  "model_path": "models/capsule_defect_detector/weights/best.pt",
+  "evaluation_date": "2025-10-05T10:50:07.980464",
+  "dataset_info": {
+    "test_images": 33,
+    "classes": [
+      "good",
+      "crack",
+      "faulty_imprint",
+      "poke",
+      "scratch",
+      "squeeze"
+    ]
+  },
+  "overall_metrics": {
+    "mAP50": 0.6429128787878788,
+    "mAP50-95": 0.6327484848484848,
+    "precision": 0.6818932274732159,
+    "recall": 0.5757575757575758,
+    "f1_score": 0.6243464058444816
+  },
+  "per_class_metrics": {
+    "good": {
+      "AP50": 0.9737272727272726,
+      "AP50-95": 0.9707409090909088,
+      "precision": 0.9545454545454546,
+      "recall": 0.9545454545454546
+    },
+    "crack": {
+      "AP50": 0.5587500000000002,
+      "AP50-95": 0.5587500000000001,
+      "precision": 0.6969735857915508,
+      "recall": 0.5
+    },
+    "faulty_imprint": {
+      "AP50": 0.75,
+      "AP50-95": 0.75,
+      "precision": 1.0,
+      "recall": 0.5
+    },
+    "poke": {
+      "AP50": 0.5799999999999998,
+      "AP50-95": 0.5219999999999999,
+      "precision": 0.43984032450228977,
+      "recall": 0.5
+    },
+    "scratch": {
+      "AP50": 0.995,
+      "AP50-95": 0.9949999999999999,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "squeeze": {
+      "AP50": 0.0,
+      "AP50-95": 0.0,
+      "precision": 0.0,
+      "recall": 0.0
+    }
+  }
+}

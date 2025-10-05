@@ -1,0 +1,12 @@
+names:
+- good
+- crack
+- faulty_imprint
+- poke
+- scratch
+- squeeze
+nc: 6
+path: C:\Users\Pc\Documents\Computer_Vision_Projects\ISP_AD\yolo_dataset
+test: images/test
+train: images/train
+val: images/val

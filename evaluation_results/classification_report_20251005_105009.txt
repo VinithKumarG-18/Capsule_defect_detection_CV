@@ -1,0 +1,55 @@
+================================================================================
+CAPSULE DEFECT DETECTION - CLASSIFICATION REPORT
+================================================================================
+
+Model: models/capsule_defect_detector/weights/best.pt
+Evaluation Date: 2025-10-05T10:50:07.980464
+Test Images: 33
+
+================================================================================
+OVERALL METRICS
+================================================================================
+mAP50               : 0.6429 (64.29%)
+mAP50-95            : 0.6327 (63.27%)
+precision           : 0.6819 (68.19%)
+recall              : 0.5758 (57.58%)
+f1_score            : 0.6243 (62.43%)
+
+================================================================================
+PER-CLASS METRICS
+================================================================================
+
+Class                AP@0.5       AP@0.5:0.95     Precision    Recall      
+--------------------------------------------------------------------------------
+good                 0.974 (97.4%)  0.971 (97.1%)  0.955        0.955
+crack                0.559 (55.9%)  0.559 (55.9%)  0.697        0.500
+faulty_imprint       0.750 (75.0%)  0.750 (75.0%)  1.000        0.500
+poke                 0.580 (58.0%)  0.522 (52.2%)  0.440        0.500
+scratch              0.995 (99.5%)  0.995 (99.5%)  1.000        1.000
+squeeze              0.000 (0.0%)  0.000 (0.0%)  0.000        0.000
+
+================================================================================
+RECOMMENDATIONS
+================================================================================
+
+[WARNING] Model below target accuracy
+   - Collect more training data
+   - Try larger model (YOLOv8l or YOLOv8x)
+   - Increase training epochs
+
+Classes needing improvement:
+  - crack: 55.9%
+    -> Collect 50-100 more examples
+    -> Review annotation quality
+    -> Check for class imbalance
+
+  - poke: 58.0%
+    -> Collect 50-100 more examples
+    -> Review annotation quality
+    -> Check for class imbalance
+
+  - squeeze: 0.0%
+    -> Collect 50-100 more examples
+    -> Review annotation quality
+    -> Check for class imbalance
+
