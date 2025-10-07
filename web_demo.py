@@ -568,4 +568,4 @@ if __name__ == '__main__':
     print("Access the demo at: http://localhost:10000")
     print("=" * 80)
 
-    app.run(host='0.0.0.0', port=10000, debug=True)
+    app.run(host='0.0.0.0', port=10000, debug=False)
