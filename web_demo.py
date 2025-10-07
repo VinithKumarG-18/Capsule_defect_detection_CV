@@ -565,7 +565,7 @@ if __name__ == '__main__':
     print(f"Model: {Config.MODEL_PATH}")
     print(f"Classes: {', '.join(Config.CLASSES)}")
     print("\nStarting web server...")
-    print("Access the demo at: http://localhost:5000")
+    print("Access the demo at: http://localhost:10000")
     print("=" * 80)
 
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=10000, debug=True)
