@@ -13,3 +13,4 @@ plotly==5.22.0
 scikit-learn==1.5.1
 PyYAML==6.0.2
 tqdm==4.66.5
+Flask==2.3.7
